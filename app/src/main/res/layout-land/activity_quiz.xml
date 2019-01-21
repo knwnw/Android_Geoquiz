@@ -32,29 +32,21 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="@string/cheat_button" />
+
+    <Button
+        android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:orientation="horizontal">
+        android:text="@string/next_button"
+        android:drawableEnd="@drawable/arrow_right"
+        android:drawablePadding="4dp" />
 
-        <Button
-            android:id="@+id/prev_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/prev_button"
-            android:drawableStart="@drawable/arrow_left"
-            android:drawablePadding="4dp" />
-
-        <Button
-            android:id="@+id/next_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:text="@string/next_button"
-            android:drawableEnd="@drawable/arrow_right"
-            android:drawablePadding="4dp" />
-
-    </LinearLayout>
 
 </FrameLayout>
