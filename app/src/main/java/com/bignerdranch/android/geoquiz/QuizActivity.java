@@ -73,7 +73,6 @@ public class QuizActivity extends AppCompatActivity {
         mCheatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start CheatActivity
                 boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
                 Intent intent = CheatActivity.newIntent(QuizActivity.this, answerIsTrue);
                 startActivityForResult(intent, REQUEST_CODE_CHEAT);
